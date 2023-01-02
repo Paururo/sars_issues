@@ -41,3 +41,5 @@ with open(output_file2, 'w') as outfile2:
   outfile2.write("B.1.1.7:Alpha\n")
   outfile2.write("B.1.617.2:Omicron\n")
   outfile2.write("B.1.1.529:Delta\n")
+
+subprocess.call(['rm', 'lineage_data.full.json'])
