@@ -19,6 +19,9 @@ def download_lineage_data():
   subprocess.call(['wget', 'https://github.com/cov-lineages/lineages-website/raw/master/_data/lineage_data.full.json'])
 
 def remove_lineage_data():
+  """
+  Removes the lineage_data.full.json file.
+  """
   subprocess.call(['rm', 'lineage_data.full.json'])
 
 def process_lineage_data(lineage_data):
