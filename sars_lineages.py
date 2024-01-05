@@ -25,6 +25,15 @@ def remove_lineage_data():
   subprocess.call(['rm', 'lineage_data.full.json'])
 
 def process_lineage_data(lineage_data):
+  """
+  Process the lineage data and write the results to two output files.
+
+  Args:
+    lineage_data (dict): A dictionary containing lineage data.
+
+  Returns:
+    None
+  """
   output_file = f"pangolist_{get_current_date_string()}.txt"
   output_file2 = f"voclist_{get_current_date_string()}.txt"
 
