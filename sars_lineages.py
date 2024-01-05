@@ -13,6 +13,9 @@ def get_current_date_string():
   return now.strftime("%Y-%m-%d")
 
 def download_lineage_data():
+  """
+  Downloads the lineage data from the specified URL.
+  """
   subprocess.call(['wget', 'https://github.com/cov-lineages/lineages-website/raw/master/_data/lineage_data.full.json'])
 
 def remove_lineage_data():
