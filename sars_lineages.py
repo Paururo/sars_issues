@@ -28,6 +28,13 @@ def process_lineage_data(lineage_data):
   """
   Process the lineage data and write the results to two output files.
 
+  This function takes a dictionary containing lineage data as input and processes it.
+  It creates two output files: 'pangolist_<current_date>.txt' and 'voclist_<current_date>.txt'.
+  The function iterates over the lineage data, extracts the lineage and description,
+  and writes them to the first output file.
+  If the lineage is found in the lineage_mapping dictionary,
+  it writes the lineage and its corresponding mapping to the second output file.
+
   Args:
     lineage_data (dict): A dictionary containing lineage data.
 
