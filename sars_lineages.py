@@ -3,6 +3,12 @@ import subprocess
 import datetime
 
 def get_current_date_string():
+  """
+  Returns the current date as a string in the format 'YYYY-MM-DD'.
+
+  Returns:
+    str: The current date as a string.
+  """
   now = datetime.datetime.now()
   return now.strftime("%Y-%m-%d")
 
